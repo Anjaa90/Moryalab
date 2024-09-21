@@ -11098,6 +11098,7 @@ blockquote cite:before {
   height: 70px;
   line-height: 70px;
   text-align: center;
+  background-color: var(--theme-color);
   border-radius: 50%;
   margin: 0 auto 14px;
 }
@@ -18361,34 +18362,42 @@ body {
     padding-top: 204px;
   }
 }
-
-.test-section {
+.checkup-section {
   text-align: center;
   margin-bottom: 50px;
 }
 
-.test-section h2 {
+.checkup-section h2 {
   font-size: 24px;
   color: var(--theme-color);
+  padding-top: 50px;
 }
 
-.test-section p {
+.checkup-section p {
   margin-bottom: 20px;
   font-size: 16px;
   color: #666;
 }
 
-.test-cards {
+.organ-checkup-cards,
+.condition-checkup-cards {
   display: flex;
-  justify-content: center; /* Centers the cards horizontally */
-  align-items: center; /* Ensures vertical alignment */
-  gap: 20px;
+  flex-wrap: nowrap; /* Prevents wrapping */
+  justify-content: center;
+  gap: 100px;
   overflow-x: auto; /* Enables horizontal scrolling */
-  padding-bottom: 10px;
-  width: 100%; /* Make the container full-width */
+  padding-bottom: 70px;
+  
 }
 
-.service-card6 {
+.card-heart-checkup,
+.card-liver-checkup,
+.card-lungs-checkup,
+.card-kidney-checkup,
+.card-allergy-checkup,
+.card-diabetes-checkup,
+.card-hiv-checkup,
+.card-viral-infection-checkup {
   min-width: 180px;
   background-color: var(--white-color);
   border-radius: 10px;
@@ -18400,20 +18409,37 @@ body {
   flex: 0 0 auto; /* Prevents shrinking */
 }
 
-.service-card6:hover {
+.card-heart-checkup:hover,
+.card-liver-checkup:hover,
+.card-lungs-checkup:hover,
+.card-kidney-checkup:hover,
+.card-allergy-checkup:hover,
+.card-diabetes-checkup:hover,
+.card-hiv-checkup:hover,
+.card-viral-infection-checkup:hover {
   background-color: var(--theme-color);
 }
 
-.service-card6:hover .content-box h4 {
+.card-heart-checkup:hover .checkup-title,
+.card-liver-checkup:hover .checkup-title,
+.card-lungs-checkup:hover .checkup-title,
+.card-kidney-checkup:hover .checkup-title,
+.card-allergy-checkup:hover .checkup-title,
+.card-diabetes-checkup:hover .checkup-title,
+.card-hiv-checkup:hover .checkup-title,
+.card-viral-infection-checkup:hover .checkup-title {
   color: var(--white-color);
 }
 
-.service-card6 .icon-box img {
+.card-heart-checkup .icon-wrapper img,
+.card-liver-checkup .icon-wrapper img,
+.card-lungs-checkup .icon-wrapper img,
+.card-kidney-checkup .icon-wrapper img {
   width: 50px;
   height: 50px;
 }
 
-.service-card6 .title {
+.checkup-title {
   font-size: 18px;
   font-weight: 700;
   margin-top: 10px;
@@ -18421,11 +18447,34 @@ body {
 }
 
 /* Scrollbar styling (optional) */
-.test-cards::-webkit-scrollbar {
+.organ-checkup-cards::-webkit-scrollbar,
+.condition-checkup-cards::-webkit-scrollbar {
   height: 8px;
 }
 
-.test-cards::-webkit-scrollbar-thumb {
+.organ-checkup-cards::-webkit-scrollbar-thumb,
+.condition-checkup-cards::-webkit-scrollbar-thumb {
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .organ-checkup-cards,
+  .condition-checkup-cards {
+    flex-direction: column; /* Stack cards vertically */
+    gap: 10px; /* Space between cards */
+  }
+
+  .card-heart-checkup,
+  .card-liver-checkup,
+  .card-lungs-checkup,
+  .card-kidney-checkup,
+  .card-allergy-checkup,
+  .card-diabetes-checkup,
+  .card-hiv-checkup,
+  .card-viral-infection-checkup {
+    min-width: 100%; /* Full width for each card */
+  }
+}
+
