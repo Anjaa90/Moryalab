@@ -76,7 +76,7 @@
         <div class="vs-menu-area text-center">
             <button class="vs-menu-toggle"><i class="fal fa-times"></i></button>
             <div class="mobile-logo">
-                <a href="index.html"><img src="assets/img/Morya Labs Logo white and blue favicon.png" alt="Medixi"></a>
+                <a><img src="assets/img/Morya Labs Logo white and blue favicon.png" alt="Medixi"></a>
             </div>
             <form action="#" class="mobile-menu-form">
                 <input type="text" class="form-control" placeholder="Search...">
@@ -85,9 +85,9 @@
             <div class="vs-mobile-menu">
                 <ul>
                     <li>
-                        <a href="index.html">Home</a>
+                        <a>Home</a>
                         <!-- <ul class="sub-menu">
-                            <li><a href="index.html">Home One</a></li>
+                            <li><a>Home One</a></li>
                             <li><a href="index-2.html">Home Two</a></li>
                             <li><a href="index-3.html">Home Three</a></li>
                             <li><a href="index-4.html">Home Four </a></li>
@@ -108,7 +108,7 @@
                         </ul> -->
                     </li>
                     <li>
-                        <a href="service.html">Health Packages</a>
+                        <a href="health-packages.html">Health Packages</a>
                         <!-- <ul class="sub-menu">
                             <li><a href="service.html">Services</a></li>
                             <li><a href="service-details.html">Services Details</a></li>
@@ -278,17 +278,17 @@
                         <div class="row align-items-center justify-content-between">
                             <div class="col-auto d-flex">
                                 <div class="header2-logo">
-                                    <a href="index.html"><img src="assets/img/Morya lab blue logo.png" alt="Logo"></a>
+                                    <a><img src="assets/img/Morya lab blue logo.png" alt="Logo"></a>
                                 </div>
                             </div>
                             <div class="col-auto">
                                 <nav class="main-menu menu-style2 d-none d-lg-block">
                                     <ul>
                                         <li>
-                                            <a href="index.html"><span class="has-new-label">Home </span></a>
+                                            <a><span class="has-new-label">Home </span></a>
                                             <!-- <ul class="menu-pages">
                                                 <li>
-                                                    <a href="index.html">
+                                                    <a>
                                                         <img src="assets/img/pages/index.jpg" alt="image">
                                                         Home One
                                                     </a>
@@ -348,7 +348,7 @@
                                             </ul> -->
                                         </li>
                                         <li>
-                                            <a href="service.html">Health Packages</a>
+                                            <a href="health-packages.html">Health Packages</a>
                                             <!-- <ul class="sub-menu">
                                                 <li><a href="service.html">Services</a></li>
                                                 <li><a href="service-details.html">Services Details</a></li>
@@ -366,7 +366,7 @@
                                             <ul class="mega-menu">
                                                 <li><a href="shop.html">Pagelist 1</a>
                                                     <ul>
-                                                        <li><a href="index.html">Home One</a></li>
+                                                        <li><a>Home One</a></li>
                                                         <li><a href="index-2.html">Home Two</a></li>
                                                         <li><a href="index-3.html">Home Three</a></li>
                                                         <li><a href="index-4.html">Home Four </a></li>
@@ -625,12 +625,12 @@
                             <img src="assets/img/about/Home - Give Your Body A Sweet Reward By Doing Full-Body Checkups-compressed-compressed.webp"
                                 alt="About Image" class="w-100">
                             <!-- <a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="popup-video play-btn style2 position-center"><i class="fas fa-play"></i></a> -->
-                            <div class="exp-box-bottom bg-white">
+                            <!-- <div class="exp-box-bottom bg-white">
                                 <div class="exp-year text-theme">
                                     <span class="counter">187</span>+
                                 </div>
                                 <p class="exp-text text-title mb-0">Years of Experience</p>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -763,7 +763,65 @@
                         </div> -->
                     </div>
                 </div>
-                <div class="col-xl-6 mb-30 pt-30 pt-xl-0">
+                    <div class="col-xl-6 mb-40 mb-xl-0 wow fadeInUp" data-wow-delay="0.3s">
+                    <form action="Appointment-confirmation.html" method="GET" class="form-wrap1 shadow-none mb-0" data-bg-color="#f3f6f7" target="_blank"> 
+
+                        <div class="form-title-box bg-title" data-bg-src="assets/img/bg/bg-shape-9.jpg">
+                            <div class="row justify-content-between align-items-center">
+                                <div class="col">
+                                    <h2 class="h4 mb-2 text-white">Book An Appointment</h2>
+                                    <p class="mb-0 text-white-light">Dynamically seize cross platform "outside the box" thinking after enterprise...</p>
+                                </div>
+                                <div class="col-auto d-none d-sm-block">
+                                    <a href="tel:0088123456789" class="ripple-icon style2"><i class="fas fa-phone"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-box">
+                            <div class="row">
+                                <div class="col-lg-6 form-group">
+                                    <select name="service" class="form-select style3" required>
+                                        <option hidden disabled selected>Select Services</option>
+                                        <option>Aerospace Medicine</option>
+                                        <option>Bariatric Surgery</option>
+                                        <option>Infectious Diseases</option>
+                                        <option>Laboratory Medicine</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-6 form-group">
+                                    <select name="doctor" class="form-select style3" required>
+                                        <option hidden disabled selected>Choose Doctor</option>
+                                        <option>Aerospace Medicine</option>
+                                        <option>Bariatric Surgery</option>
+                                        <option>Infectious Diseases</option>
+                                        <option>Laboratory Medicine</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-6 form-group">
+                                    <input type="text" name="name" class="form-control style3" placeholder="Your Name" required>
+                                    <i class="fal small fa-user"></i>
+                                </div>
+                                <div class="col-lg-6 form-group">
+                                    <input type="email" name="email" class="form-control style3" placeholder="Email Address" required>
+                                    <i class="fal small fa-envelope"></i>
+                                </div>
+                                <div class="col-lg-6 form-group">
+                                    <input type="number" name="phone" class="form-control style3" placeholder="Your Phone" required>
+                                    <i class="fal small fa-phone"></i>
+                                </div>
+                                <div class="col-lg-6 form-group">
+                                    <input type="text" name="dateTime" class="dateTime-pick form-control style3" placeholder="Select Date & Time" required>
+                                    <i class="fal small fa-calendar-alt"></i>
+                                </div>
+                                <div class="col-xl-12 text-center">
+                                    <button type="submit" class="vs-btn style2">Make Appointment<i class="far fa-calendar-alt"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    
+                </div>
+                <!-- <div class="col-xl-6 mb-30 pt-30 pt-xl-0">
                     <form action="#" class="form-wrap1 bg-white wow fadeInUp" data-wow-delay="0.3s">
                         <div class="form-title-box bg-title">
                             <div class="row justify-content-between align-items-center">
@@ -821,7 +879,7 @@
                             </div>
                         </div>
                     </form>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -1127,10 +1185,11 @@
                 <div class="row align-items-center justify-content-between">
                     <div class="col-sm-6 col-md-auto text-center text-sm-start">
                         <div class="footer1-logo bg-white">
-                            <a href="index.html"><img src="assets/img/Morya lab blue logo.png" alt="Logo"></a>
+                            <a><img src="assets/img/Morya lab blue logo.png" alt="Logo"></a>
                         </div>
-                    </div>
-                    <div class=" col-sm-6 col-md-auto pt-20 pt-sm-0 pb-20 pb-sm-0 text-center text-sm-end">
+
+
+                        <div class=" col-sm-6 col-md-auto pt-20 pt-sm-0 pb-20 pb-sm-0 text-center text-sm-end">
                         <div class="footer-social">
                             <a href="#"><i class="fab fa-facebook-f"></i></a>
                             <a href="#"><i class="fab fa-twitter"></i></a>
@@ -1261,7 +1320,7 @@
                 <div class="row align-items-center justify-content-between">
                     <div class="col-auto text-center text-md-end">
                         <p class="mb-0 text-white">Copyright <i class="fal fa-copyright"></i> 2024 by<a
-                                class="text-white" href="index.html">Morya Lab</a>. All rights reserved by <a>Morya
+                                class="text-white">Morya Lab</a>. All rights reserved by <a>Morya
                                 Lab</a>.</p>
                     </div>
                     <div class="col-auto d-none d-md-block">
