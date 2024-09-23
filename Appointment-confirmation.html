@@ -322,24 +322,22 @@
 
         <div class="confirmation">
             <h1>Your Appointment is Confirmed!</h1>
-            <p><strong>Service:</strong> <span id="service"></span></p>
-            <p><strong>Doctor:</strong> <span id="doctor"></span></p>
-            <p><strong>Name:</strong> <span id="name"></span></p>
-            <p><strong>Email:</strong> <span id="email"></span></p>
-            <p><strong>Phone:</strong> <span id="phone"></span></p>
-            <p><strong>Date & Time:</strong> <span id="dateTime"></span></p>
+            <p><strong>Name:</strong> <span id="confirmName"></span></p>
+            <p><strong>Phone:</strong> <span id="confirmPhone"></span></p>
+            <p><strong>Address:</strong> <span id="confirmAddress"></span></p>
+            <p><strong>Tests:</strong> <span id="confirmTests"></span></p>
+            <p><strong>Date & Time:</strong> <span id="confirmDateTime"></span></p>
         </div>
         
         <script>
             const params = new URLSearchParams(window.location.search);
-            document.getElementById('service').textContent = params.get('service');
-            document.getElementById('doctor').textContent = params.get('doctor');
-            document.getElementById('name').textContent = params.get('name');
-            document.getElementById('email').textContent = params.get('email');
-            document.getElementById('phone').textContent = params.get('phone');
-            document.getElementById('dateTime').textContent = params.get('dateTime');
-            
+            document.getElementById('confirmName').textContent = params.get('name');
+            document.getElementById('confirmPhone').textContent = params.get('phone');
+            document.getElementById('confirmAddress').textContent = params.get('address');
+            document.getElementById('confirmTests').textContent = params.get('tests');
+            document.getElementById('confirmDateTime').textContent = params.get('dateTime');
         </script>
+        
         
         </body>
 

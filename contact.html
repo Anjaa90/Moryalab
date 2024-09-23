@@ -304,173 +304,88 @@
         <div class="container">
             <div class="row gx-40">
                 <div class="col-xl-6 mb-40 mb-xl-0 wow fadeInUp" data-wow-delay="0.3s">
-                    <form action="Appointment-confirmation.html" method="GET" class="form-wrap1 shadow-none mb-0"
-                        data-bg-color="#f3f6f7" target="_blank">
-
+                    <form action="Appointment-confirmation.html" method="GET" class="form-wrap1 shadow-none mb-0" data-bg-color="#f3f6f7" target="_blank">
                         <div class="form-title-box bg-title" data-bg-src="assets/img/bg/bg-shape-9.jpg">
                             <div class="row justify-content-between align-items-center">
                                 <div class="col">
                                     <h2 class="h4 mb-2 text-white">Book An Appointment</h2>
-                                    <p class="mb-0 text-white-light">Dynamically seize cross platform "outside the box"
-                                        thinking after enterprise...</p>
-                                </div>
-                                <div class="col-auto d-none d-sm-block">
-                                    <a href="tel:0088123456789" class="ripple-icon style2"><i
-                                            class="fas fa-phone"></i></a>
                                 </div>
                             </div>
                         </div>
                         <div class="form-box">
                             <div class="row">
                                 <div class="col-lg-6 form-group">
-                                    <select name="service" class="form-select style3" required>
-                                        <option hidden disabled selected>Select Services</option>
-                                        <option>Aerospace Medicine</option>
-                                        <option>Bariatric Surgery</option>
-                                        <option>Infectious Diseases</option>
-                                        <option>Laboratory Medicine</option>
-                                    </select>
-                                </div>
-                                <div class="col-lg-6 form-group">
-                                    <select name="doctor" class="form-select style3" required>
-                                        <option hidden disabled selected>Choose Doctor</option>
-                                        <option>Aerospace Medicine</option>
-                                        <option>Bariatric Surgery</option>
-                                        <option>Infectious Diseases</option>
-                                        <option>Laboratory Medicine</option>
-                                    </select>
-                                </div>
-                                <div class="col-lg-6 form-group">
-                                    <input type="text" name="name" class="form-control style3" placeholder="Your Name"
-                                        required>
+                                    <input type="text" name="name" class="form-control style3" placeholder="Your Name" required>
                                     <i class="fal small fa-user"></i>
                                 </div>
                                 <div class="col-lg-6 form-group">
-                                    <input type="email" name="email" class="form-control style3"
-                                        placeholder="Email Address" required>
-                                    <i class="fal small fa-envelope"></i>
-                                </div>
-                                <div class="col-lg-6 form-group">
-                                    <input type="number" name="phone" class="form-control style3"
-                                        placeholder="Your Phone" required>
+                                    <input type="number" name="phone" class="form-control style3" placeholder="Your Phone" required>
                                     <i class="fal small fa-phone"></i>
                                 </div>
                                 <div class="col-lg-6 form-group">
-                                    <input type="text" name="dateTime" class="dateTime-pick form-control style3"
-                                        placeholder="Select Date & Time" required>
+                                    <input type="text" name="address" class="form-control style3" placeholder="Your Address" required>
+                                    <i class="fal small fa-map-marker-alt"></i>
+                                </div>
+                                <div class="col-lg-6 form-group">
+                                    <select name="tests" class="form-select style3" id="testsSelect" required>
+                                        <option hidden disabled selected>Tests Required</option>
+                                        <option>Diabetes Screening</option>
+                                        <option>Thyroid Function Test</option>
+                                        <option>HbA1c Test</option>
+                                        <option>Fasting Blood Sugar</option>
+                                        <option>Complete Blood Count (CBC)</option>
+                                        <option>Lipid Profile</option>
+                                        <option>Basic Metabolic Panel</option>
+                                        <option>Comprehensive Metabolic Panel</option>
+                                        <option value="custom">Other (Please specify)</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-6 form-group" id="customTestGroup" style="display: none;">
+                                    <input type="text" name="customTest" class="form-control style3" placeholder="Specify Custom Test">
+                                    <i class="fal small fa-notes-medical"></i>
+                                </div>
+                                <div class="col-lg-6 form-group">
+                                    <input type="text" name="dateTime" class="dateTime-pick form-control style3" placeholder="Select Date & Time" required>
                                     <i class="fal small fa-calendar-alt"></i>
                                 </div>
                                 <div class="col-xl-12 text-center">
-                                    <button type="submit" class="vs-btn style2">Make Appointment<i
-                                            class="far fa-calendar-alt"></i></button>
+                                    <button type="submit" class="vs-btn style2">Make Appointment<i class="far fa-calendar-alt"></i></button>
                                 </div>
                             </div>
                         </div>
                     </form>
-
                 </div>
-                <!-- <div class="col-xl-6">
-                    <div class="vs-accordion accordion" id="vsaccordion">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
-                                    Uniquely optimize reliable models before wireless results ofessionally impact progressive core.
-                                </button>
-                            </h2>
-                            <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#vsaccordion">
-                                <div class="accordion-body">
-                                    <p>Professionally impact distributed data via value-added experiences. Proacti incentivize 24/365 applications whereas turnkey total linkage. whiteboard multifunctional channels with interoperable value.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                                    Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for
-                                </button>
-                            </h2>
-                            <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#vsaccordion">
-                                <div class="accordion-body">
-                                    <p>Professionally impact distributed data via value-added experiences. Proacti incentivize 24/365 applications whereas turnkey total linkage. whiteboard multifunctional channels with interoperable value.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                                    From its medieval origins to the digital era, learn everything there is to know about the ubiquitous
-                                </button>
-                            </h2>
-                            <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#vsaccordion">
-                                <div class="accordion-body">
-                                    <p>Professionally impact distributed data via value-added experiences. Proacti incentivize 24/365 applications whereas turnkey total linkage. whiteboard multifunctional channels with interoperable value.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                                    Lorem ipsum began as scrambled, nonsensical Latin derived from Cicero's 1st-century BC text De Finibus
-                                </button>
-                            </h2>
-                            <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#vsaccordion">
-                                <div class="accordion-body">
-                                    <p>Professionally impact distributed data via value-added experiences. Proacti incentivize 24/365 applications whereas turnkey total linkage. whiteboard multifunctional channels with interoperable value.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
-                                    Some claim lorem ipsum threatens to promote design over content, while others defend its value process
-                                </button>
-                            </h2>
-                            <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#vsaccordion">
-                                <div class="accordion-body">
-                                    <p>Professionally impact distributed data via value-added experiences. Proacti incentivize 24/365 applications whereas turnkey total linkage. whiteboard multifunctional channels with interoperable value.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
+    
                 <div class="col-xl-6">
-                    <h2 style="color: #27477d; font-size: 48px;
-                    line-height: 58px;
-                    font-weight: 700;
-                    margin-bottom: 13px;;">Contact Us</h2>
-                    <p>Morya Pathology Labs provides precise, reliable diagnostic services with advanced technology and
-                        expert care. Trust us for all your testing needs. </p>
-                    <p>Book your test today. We're Here to Help You. Get in Touch . </p>
-                    <p>
-
-                        Have a question or need assistance? Reach out to us for any inquiries or to schedule your test.
-                        Call or email us, and we’ll get back to you promptly.</p>
-
-
-
-                    <h4 style="color: #27477d; font-size: 18px;
-                        line-height: 58px;
-                        font-weight: 700;
-                        margin-bottom: 13px;">Address:</h4>
+                    <h2 style="color: #27477d; font-size: 48px; line-height: 58px; font-weight: 700; margin-bottom: 13px;">Contact Us</h2>
+                    <p>Morya Pathology Labs provides precise, reliable diagnostic services with advanced technology and expert care. Trust us for all your testing needs.</p>
+                    <p>Book your test today. We're Here to Help You. Get in Touch.</p>
+                    <p>Have a question or need assistance? Reach out to us for any inquiries or to schedule your test. Call or email us, and we’ll get back to you promptly.</p>
+    
+                    <h4 style="color: #27477d; font-size: 18px; line-height: 58px; font-weight: 700; margin-bottom: 13px;">Address:</h4>
                     <p>Sant Rohidas Marg, Mominpada, Old Panvel, Panvel, Navi Mumbai, Maharashtra 410206</p>
-                    <h4 style="color: #27477d; font-size: 18px;
-                    line-height: 58px;
-                    font-weight: 700;
-                    margin-bottom: 13px;">Email ID:</h4>
-                    <p>contact@moryalabs.com</p>
-                    <h4 style="color: #27477d; font-size: 18px;
-                    line-height: 58px;
-                    font-weight: 700;
-                    margin-bottom: 13px;">Contact No:</h4>
-                    <p> 9011902849</p>
-
-
+                    <h4 style="color: #27477d; font-size: 18px; line-height: 58px; font-weight: 700; margin-bottom: 13px;">Email ID:</h4>
+                    <p>contact@moryalabs.in</p>
+                    <h4 style="color: #27477d; font-size: 18px; line-height: 58px; font-weight: 700; margin-bottom: 13px;">Contact No:</h4>
+                    <p>9011902849</p>
                 </div>
             </div>
         </div>
-
-
     </section>
+    
+    <script>
+        document.getElementById('testsSelect').addEventListener('change', function() {
+            const customTestGroup = document.getElementById('customTestGroup');
+            if (this.value === 'custom') {
+                customTestGroup.style.display = 'block';
+            } else {
+                customTestGroup.style.display = 'none';
+            }
+        });
+    </script>
+    
+    
+    
 
     <!--==============================
 			Footer Area
