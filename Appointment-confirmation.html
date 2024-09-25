@@ -4,10 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta http-equ            iv="x-ua-compatible" content="ie=edge"> 
-    <title>Medixi - Medical and Health Care HTML Template - About Us</title>
+    <title>Appointment-confirmation</title>
     <meta name="author" content="Vecuro">
-    <meta name="description" content="Medixi - Medical and Health Care HTML Template">
-    <meta name="keywords" content="Medixi - Medical and Health Care HTML Template">
+    <meta name="description" content="Your Appointment is confirmed with Morya Labs">
+    <meta name="keywords" content=" ">
     <meta name="robots" content="INDEX,FOLLOW">
     <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -393,28 +393,14 @@
         .confirmation { max-width: 600px; margin: auto; padding: 20px; border: 1px solid #ddd; border-radius: 5px; }
     </style>
     <body>
-
         <div class="confirmation">
             <h1>Your Appointment is Confirmed!</h1>
-            <p><strong>Name:</strong> <span id="confirmName"></span></p>
-            <p><strong>Phone:</strong> <span id="confirmPhone"></span></p>
-            <p><strong>Address:</strong> <span id="confirmAddress"></span></p>
-            <p><strong>Tests:</strong> <span id="confirmTests"></span></p>
-            <p><strong>Date & Time:</strong> <span id="confirmDateTime"></span></p>
+            
         </div>
         
-        <script>
-            const params = new URLSearchParams(window.location.search);
-            document.getElementById('confirmName').textContent = params.get('name');
-            document.getElementById('confirmPhone').textContent = params.get('phone');
-            document.getElementById('confirmAddress').textContent = params.get('address');
-            document.getElementById('confirmTests').textContent = params.get('Test Required');
-            document.getElementById('confirmDateTime').textContent = params.get('dateTime');
-        </script>
-        
-        
-        </body>
-
+       
+    </body>
+    
         <br><br>
      
     <footer class="footer-wrapper footer-layout1" data-bg-src="assets/img/bg/bg-shape-4.png" style="background-image: url(&quot;assets/img/bg/bg-shape-4.png&quot;);">
