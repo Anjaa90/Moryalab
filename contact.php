@@ -42,7 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     exit();
 } else {
     // If the form was not submitted, redirect back to the form
-    header("Location: index.php");
+    header("Location: index.html");
     exit();
 }
 ?>

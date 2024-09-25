@@ -567,6 +567,28 @@
                 </div>
             </div>
         </div>
+    </section>
+    <style>
+        @media (max-width: 768px) {
+            .vs-carousel {
+                display: flex;
+                flex-direction: column; /* Stack items vertically */
+                align-items: center; /* Center items */
+            }
+        
+            .vs-carousel .col-xl-4 {
+                flex: 0 0 100%; /* Make each service box take full width */
+                max-width: 100%; /* Ensure it doesn't exceed full width */
+                margin-bottom: 20px; /* Maintain spacing between items */
+            }
+        
+            .service-box {
+                width: 100%; /* Make sure service boxes take full width */
+            }
+        }
+        
+        
+    </style>
     <!--==============================
     About Area
     ==============================-->
