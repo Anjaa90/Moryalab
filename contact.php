@@ -32,9 +32,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $conn->close();
     */
 
-    // Optionally, send an email notification
-    if (!mail("contact@moryalabs.in", "New Appointment", "Name: $name\nPhone: $phone\nAddress: $address\nTests: $tests\nDate & Time: $dateTime")) {
-        error_log("Failed to send email to contact@moryalabs.in");
+    // Prepare the email headers
+    $to = "contact@moryalabs.in";
+    $subject = "New Appointment";
+    $message = "Name: $name\nPhone: $phone\nAddress: $address\nTests: $tests\nDate & Time: $dateTime";
+    $headers = "From: noreply@moryalabs.in\r\n";
+
+    // Send the email
+    if (!mail($to, $subject, $message, $headers)) {
+        error_log("Failed to send email to $to");
     }
 
     // Redirect to confirmation page
